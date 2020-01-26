@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_header_id"
+        android:layout_centerHorizontal="true">     
+    </ListView>
+    
+    <include 
+        android:id="@+id/base_btns_parent_id"
+        layout="@layout/journ_base_buttons"  /> 
+    
+    <include
+        android:id="@+id/app_header_id"
+        layout="@layout/journ_app_header"  /> 
+     
+     <!-- A -->
+	 <RelativeLayout
+	        android:id="@+id/activity_inputer_parent_id"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#900000"
+	        android:visibility="gone">
+	       
+	       <!--  B -->
+	     <RelativeLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:layout_margin="10dp" >
+	        
+		      <include 
+		          android:id="@+id/activity_inputer_id"
+		          layout="@layout/journ_input_layout"  /> 
+	     </RelativeLayout>
+         
+    </RelativeLayout>
+
+</RelativeLayout>
